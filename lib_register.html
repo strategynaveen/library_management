@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StrategyNaveen</title>
+	<!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome --
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <-- Google Fonts Roboto --
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ <!---<link rel="stylesheet" type="text/css" href="main.css">---->
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<!--navigation----->
+	<div class="cont-col-nav animated bounceInRight slow">
+		<h4 class="text-center ">Library Management</h4>
+	</div>
+		<!--Navbar -->
+<nav class=" mb-0 navbar sticky-top navbar-expand-lg navbar-dark col-nav animated bounceInRight slow" id="myHeader">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      	<li class="nav-item active">
+        	<a class="nav-link" href="index.html">Home
+          		<span class="sr-only">(current)</span>
+        	</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="stud_login.html">Student</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="lib_incharge.html">Incharge</a>
+      	</li>
+      	<li class="nav-item dropdown">
+        	<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          	aria-haspopup="true" aria-expanded="false">HOD</a>
+        	<div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          		<a class="dropdown-item" href="hod_register.html">Register</a>
+          		<a class="dropdown-item" href="hod_login.html">Login</a>
+          		<a class="dropdown-item" href="database/hod_unsubmit.php">Unsubmit</a>
+        	</div>
+      	</li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      	<li class="nav-item">
+        	<a class="nav-link waves-effect waves-light">
+          		<i class="fa fa-twitter "></i>
+        	</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link waves-effect waves-light">
+          		<i class="fa fa-google-plus "></i>
+        	</a>
+      	</li>
+      	<li class="nav-item dropdown">
+        	<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          		aria-haspopup="true" aria-expanded="false">
+          		<i class="fa fa-user "></i>
+        	</a>
+        	<div class="dropdown-menu dropdown-menu-right dropdown-default"
+          		aria-labelledby="navbarDropdownMenuLink-333">
+          		<a class="dropdown-item" href="#">Action</a>
+          		<a class="dropdown-item" href="#">Another action</a>
+          		<a class="dropdown-item" href="#">Something else here</a>
+        	</div>
+      	</li>
+    </ul>
+ 	</div>
+</nav>
+<br>
+<!--/.Navbar -->
+	<!---navigation end------>
+
+
+<!-----div container-------->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<div class="jumbotron shadow-lg rounded animated slower bounceInLeft ">
+				<h2 class="text-center text-info font-weight-bold shadow-lg rounded animated slower bounceInRight">Library Registeration</h2>
+        <br>
+        <form action="database/lib_insert.php" id="myform" method="POST">
+          <div class="md-form">
+              <i class="fa fa-id-card prefix"></i>
+              <input type="text" id="lib_name" name="lib_name" class="form-control form-control-md" required="true">
+              <label for="lib_name">Name</label>
+          </div>
+          <div class="md-form">
+              <i class="fa fa-envelope prefix"></i>
+              <input type="email" id="lib_email" name="lib_email" class="form-control form-control-md" required="true">
+              <label for="lib_email">EmailId</label>
+          </div>
+          <div class="md-form">
+              <i class="fa fa-phone prefix"></i>
+              <input type="text" id="lib_phone" name="lib_phone" class="form-control form-control-md" required="true">
+              <label for="lib_phone">Phone Number</label>
+          </div>
+          <br>
+          <div class="InputWithIcon">
+            <select class="custom-select cust mr-sm-2" name="lib_gender" id="lib_gender" required="true">
+              <option selected disabled>Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+            <i class="fa fa-user"></i>
+          </div>  
+          <br>
+          <div class="md-form amber-textarea active-amber-textarea">
+            <i class="fa fa-pencil prefix"></i>
+            <textarea id="lib_add" class="md-textarea form-control" name="lib_add" rows="3" required="true"></textarea>
+            <label for="lib_add">Address</label>
+          </div>
+          <br>
+          <label>DateOfBirth:</label>
+            <div class="form-group">
+              <div class="InputWithIcon">
+                <input type="date" name="lib_dob" id="lib_dob" class="form-control form-control-lg" required="true">
+                <i class="fa fa-calendar"></i>
+              </div>
+            </div>
+          <br>
+          <div class="md-form">
+            <i class="fa fa-user-secret prefix"></i>
+            <input type="text" id="lib_uid" name="lib_uid" class="form-control form-control-md" required="true">
+            <label for="lib_uname">UserId</label>
+          </div>
+          <div class="md-form">
+              <i class="fa fa-lock prefix"></i>
+              <input type="password" id="lib_pass" name="lib_pass" class="form-control form-control-md" required="true">
+              <label for="lib_pass">Password</label>
+          </div>
+          <div class="md-form">
+              <i class="fa fa-lock prefix"></i>
+              <input type="password" id="lib_repass" name="lib_repass" class="form-control form-control-md" required="true">
+              <label for="lib_repass">RetypePassword</label>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+              <input type="submit" class="btn btn-lg btn-info" name="submit" value="register">
+            </div>
+            <div class="col-4"></div>
+          </div>
+
+        </form>
+			</div>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>	
+</div>
+
+
+
+<!----end container-------->
+	<!-- Footer -->
+	<br>
+	<br>
+<footer class="page-footer font-small blue-grey lighten-5 animated delay-2s bounceInUp">
+  	<div style="background-color: #21d192;">
+    	<div class="container">
+      		<!-- Grid row-->
+      		<div class="row py-4 d-flex align-items-center">
+        		<!-- Grid column -->
+        		<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          			<h6 class="mb-1 font-weight-bold">Get connected with us on social networks!</h6>
+        		</div>
+        		<!-- Grid column -->
+        		<!-- Grid column -->
+        		<div class="col-md-6 col-lg-7 text-center text-md-right">
+          			<!-- Facebook -->
+          			<a class="fb-ic">
+            			<i class="fa fa-facebook-f fa-2x white-text mr-4"> </i>
+          			</a>
+          			<!-- Twitter -->
+          			<a class="tw-ic">
+            			<i class="fa fa-twitter fa-2x white-text mr-4"> </i>
+          			</a>
+          			<!-- Google +-->
+          			<a class="gplus-ic">
+            			<i class="fa fa-google-plus fa-2x white-text mr-4"> </i>
+          			</a>
+          			<!--Linkedin -->
+          			<a class="li-ic">
+            			<i class="fa fa-linkedin fa-2x white-text mr-4"> </i>
+          			</a>
+          			<!--Instagram-->
+          			<a class="ins-ic">
+            			<i class="fa fa-instagram fa-2x white-text"> </i>
+          			</a>
+        		</div>
+        		<!-- Grid column -->
+      		</div>
+      		<!-- Grid row-->
+    	</div>
+  	</div>
+  	<!-- Footer Links -->
+  	<div class="container text-center text-md-left mt-5">
+    	<!-- Grid row -->
+    	<div class="row mt-3 dark-grey-text">
+      		<!-- Grid column -->
+      		<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        		<!-- Content -->
+        		<h6 class="text-uppercase font-weight-bold">Company name</h6>
+        		<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        		<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          		consectetur
+          		adipisicing elit.</p>
+      		</div>
+      		<!-- Grid column -->
+      		<!-- Grid column -->
+      		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        	<!-- Links -->
+        		<h6 class="text-uppercase font-weight-bold">Products</h6>
+        		<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        		<p>
+          			<a class="dark-grey-text" href="#!">MDBootstrap</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">PHP,JQUERY</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">AJAX,JAVASCRIPT</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">HTML,CSS</a>
+        		</p>
+      		</div>
+      		<!-- Grid column -->
+      		<!-- Grid column -->
+      		<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        	<!-- Links -->
+        		<h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        		<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        		<p>
+          			<a class="dark-grey-text" href="#!">Student Login</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">LibraryAdmin</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">Head Of Department</a>
+        		</p>
+        		<p>
+          			<a class="dark-grey-text" href="#!">Representative Login</a>
+        		</p>
+      		</div>
+      		<!-- Grid column -->
+      		<!-- Grid column -->
+      		<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        	<!-- Links -->
+        		<h6 class="text-uppercase font-weight-bold">Contact</h6>
+        		<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        		<p>
+          			<i class="fa fa-home mr-3"></i> 79/a mettu street,  Thirupparankundream,  Madurai,  Indian</p>
+        		<p>
+          			<i class="fa fa-envelope mr-3"></i> naveenkumar709434@gmail.com</p>
+        		<p>
+          			<i class="fa fa-phone mr-3"></i> + 63 796 179 16</p>
+        		<p>
+          			<i class="fa fa-print mr-3"></i> + 99 42 93 32 62</p>
+      		</div>
+      		<!-- Grid column -->
+    	</div>
+    	<!-- Grid row -->
+  	</div>
+  	<!-- Footer Links -->
+  	<!-- Copyright -->
+  	<div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+  	  <a class="dark-grey-text" href="https://mdbootstrap.com/">StrategySoftwares.com</a>
+  	</div>
+  	<!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!----footer end----->
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		//alert("hi guys");
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>straegynaveen</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mdb.min.css">
+  	<!-- Your custom styles (optional) -->
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="fa/css/font-awesome.min.css">
+  	<!--<link rel="stylesheet" type="text/css" href="main.css">-->
+  	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--navigation----->
+	<div class="cont-col-nav animated bounceInRight slow">
+		<h4 class="text-center ">Library Management</h4>
+	</div>
+	<!--Navbar -->
+	<nav class=" mb-0 navbar sticky-top navbar-expand-lg navbar-dark col-nav animated bounceInRight slow" id="myHeader">
+  		<a class="navbar-brand" href="#">Navbar</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    		<ul class="navbar-nav mr-auto">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="index.html">Home
+          				<span class="sr-only">(current)</span>
+        			</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="stud_login.html">Student</a>
+      			</li>
+      			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-444" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incharge</a>
+              <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-444">
+                <a class="dropdown-item" href="lib_incharge.html">Login</a>
+                <a class="dropdown-item" href="book_view.html">SearchBook</a>
+                <a class="dropdown-item" href="b_reg.html">ADDBook</a>
+                <a class="dropdown-item" href="database/lib_work.php">Work</a>
+                <a class="dropdown-item" href="database/order_view.php">Orders</a>
+              </div>
+            </li>
+      			<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          			aria-haspopup="true" aria-expanded="false">HOD</a>
+        			<div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          				<a class="dropdown-item" href="hod_register.html">Register</a>
+          				<a class="dropdown-item" href="hod_login.html">Login</a>
+          				<a class="dropdown-item" href="database/hod_unsubmit.php">Unsubmit</a>
+        			</div>
+      			</li>
+    		</ul>
+    		<ul class="navbar-nav ml-auto nav-flex-icons">
+      			<li class="nav-item">
+        			<a class="nav-link waves-effect waves-light">
+          				<i class="fa fa-twitter"></i>
+        			</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link waves-effect waves-light">
+          				<i class="fa fa-google-plus"></i>
+        			</a>
+      			</li>
+      			<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          			aria-haspopup="true" aria-expanded="false">
+          				<i class="fa fa-user "></i>
+        			</a>
+        			<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          				<a class="dropdown-item" href="#">Action</a>
+          				<a class="dropdown-item" href="#">Another action</a>
+          				<a class="dropdown-item" href="#">Something else here</a>
+        			</div>
+      			</li>
+    		</ul>
+ 		</div>
+	</nav>
+	<br>
+	<!--navigation end--->
+	
+	<!------container-------->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="jumbotron rounded">
+					<h1 class="text-center text-info font-weight-bold">Book Details</h1>
+					<div class="row">
+						<div class="col-6"></div>
+						<div class="col-6">
+							<div class="text-center">
+								<a class="btn btn-lg btn-info" value="AddBook" href="b_reg.html"><i class="fa fa-book">ADDBook</i></a>
+							</div>
+						</div>
+					</div>
+					<div id="table_view"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------container end------>
+
+	<!---footer------>
+	<footer class="page-footer font-small blue-grey lighten-5 animated delay-2s bounceInUp">
+		<div style="background-color: #21d192;">
+    		<div class="container">
+      			<div class="row py-4 d-flex align-items-center">
+        			<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          				<h6 class="mb-1 font-weight-bold">Get connected with us on social networks!</h6>
+        			</div>
+        			<div class="col-md-6 col-lg-7 text-center text-md-right">
+          				<a class="fb-ic">
+            				<i class="fa fa-facebook-f fa-2x white-text mr-4"> </i>
+          				</a>
+          				<a class="tw-ic">
+            				<i class="fa fa-twitter fa-2x white-text mr-4"> </i>
+          				</a>
+          			    <a class="gplus-ic">
+            				<i class="fa fa-google-plus fa-2x white-text mr-4"> </i>
+          				</a>
+          			    <a class="li-ic">
+            				<i class="fa fa-linkedin fa-2x white-text mr-4"> </i>
+          				</a>
+          				<a class="ins-ic">
+            				<i class="fa fa-instagram fa-2x white-text"> </i>
+          				</a>
+        			</div>
+        		</div>
+      		</div>
+  		</div>
+  		<div class="container text-center text-md-left mt-5">
+    	   	<div class="row mt-3 dark-grey-text">
+      	    	<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+               		<h6 class="text-uppercase font-weight-bold">Company name</h6>
+        			<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        			<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          				consectetur
+          				adipisicing elit.</p>
+      			</div>
+      			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        	    	<h6 class="text-uppercase font-weight-bold">Products</h6>
+        			<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        			<p>
+          				<a class="dark-grey-text" href="#!">MDBootstrap</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">PHP,JQUERY</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">AJAX,JAVASCRIPT</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">HTML,CSS</a>
+        			</p>
+      			</div>
+      		  	<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        	    	<h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        			<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        			<p>
+          				<a class="dark-grey-text" href="#!">Student Login</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">LibraryAdmin</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">Head Of Department</a>
+        			</p>
+        			<p>
+          				<a class="dark-grey-text" href="#!">Representative Login</a>
+        			</p>
+      			</div>
+      		   	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        	    	<h6 class="text-uppercase font-weight-bold">Contact</h6>
+        			<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        			<p>
+          				<i class="fa fa-home mr-3"></i> 79/a mettu street,  Thirupparankundream,  Madurai,  India
+          			</p>
+        			<p>
+          				<i class="fa fa-envelope mr-3"></i> naveenkumar709434@gmail.com
+          			</p>
+        			<p>
+          				<i class="fa fa-phone mr-3"></i> + 63 796 179 16
+          			</p>
+        			<p>
+          				<i class="fa fa-print mr-3"></i> + 99 42 93 32 62
+          			</p>
+      			</div>
+      		</div>
+    	</div>
+  	 	<div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    		<a class="dark-grey-text" href="https://mdbootstrap.com/">StrategySoftwares.com</a>
+  		</div>
+  	</footer>
+	<!---footer end---->
+
+<!-- jQuery -->
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+  	<!-- Bootstrap tooltips -->
+  	<script type="text/javascript" src="js/popper.min.js"></script>
+  	<!-- Bootstrap core JavaScript -->
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<!-- MDB core JavaScript -->
+  	<script type="text/javascript" src="js/mdb.min.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$('#table_view').load("database/book_view.php");
+  		});
+  	</script>
+</body>
+</html>
